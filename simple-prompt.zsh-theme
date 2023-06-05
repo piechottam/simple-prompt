@@ -5,8 +5,8 @@ autoload -Uz vcs_info
 # Load colors function, provided by zsh -- remove
 autoload -U colors && colors
 
-# Enable style options for git via the vcs_info plugin 
-zstyle ':vcs_info:*' enable git 
+# Enable style options for git via the vcs_info plugin
+zstyle ':vcs_info:*' enable git
 
 # Z shell function to display information about the current vcs info
 # Whenever the function is run it will automatically run the vcs_info and display the information
@@ -42,15 +42,15 @@ zstyle ':vcs_info:*' check-for-changes true
 # %c - number of commits ahead/behind the upstream branch
 zstyle ':vcs_info:git:*' formats "%F{15}on%{$reset_color%} %F{3}%b%F{4}%F{4}%F{6} %m%u%c%F{3}%{$reset_color%}"
 
-# To access colors by number in the Z shell (zsh) prompt, 
+# To access colors by number in the Z shell (zsh) prompt,
 # you can use the %F{number} and %K{number} escape sequences to set the foreground (text) and background colors, respectively.
 machine="%F{4}%m%{$reset_color%}"
-at="%F{15}at%{$reset_color%}"
+at="%F{15}@%{$reset_color%}"
 on="on"
 relativeHome="%F{4}%~%{$reset_color%}"
 carriageReturn=""$'\n'""
 emptyLineBottom="%r"
-chevronRight=""
+chevronRight=">"
 cmdPrompt="%(?:%F{2}${chevronRight} :%F{1}${chevronRight} )"
 git_info="\$vcs_info_msg_0_"
 
