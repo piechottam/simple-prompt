@@ -44,7 +44,7 @@ zstyle ':vcs_info:git:*' formats "%F{15}on%{$reset_color%} %F{3}%b%F{4}%F{4}%F{6
 
 # To access colors by number in the Z shell (zsh) prompt,
 # you can use the %F{number} and %K{number} escape sequences to set the foreground (text) and background colors, respectively.
-user="%F{4}%u%{$reset_color%}"
+user="%F{4}%n%{$reset_color%}"
 machine="%F{4}%m%{$reset_color%}"
 at="%F{15}@%{$reset_color%}"
 in="%F{15}:%{$reset_color%}"
